@@ -1,0 +1,12 @@
+applications:
+- path: target/TomcatHelloWorldApp.war
+  memory: 256M
+  instances: 1
+  domain: mybluemix.net
+  name: Slugbot
+  host: Slugbot
+  disk_quota: 1024M
+  services:
+  - ClearDB MySQL Database-pf
+  - availability-monitoring-auto
+  buildpack: java_buildpack
